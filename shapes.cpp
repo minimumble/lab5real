@@ -51,5 +51,15 @@ Rectangle::Rectangle(double x_val_in, double y_val_in)
 : width(x_val_in), height(y_val_in) { }
 
 void Rectangle::draw(Canvas *canvas) const {
-    
+    for (int x = 0; x < Canvas::WIDTH; ++x) {
+      for (int y = 0; y < Canvas::HEIGHT; ++y) {
+          
+        double x_diff = x - get_x_pos();
+        double y_diff = y - get_y_pos();
+            
+        if ((abs(x_diff) <= (width/2)) && (abs(y_diff) <= (height/2))) {
+                canvas->set_pixel(x, y, true);
+        }
+      }
+    }
 }
