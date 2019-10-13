@@ -42,7 +42,8 @@ void Ellipse::draw(Canvas *canvas) const {
 
 /********************************** CIRCLE ***********************************/
 
-// TASK 1 - CIRCLE IMPLEMENTATION HERE
+Circle::Circle(double rad_in)
+: Ellipse(rad_in,rad_in) {}
 
 /********************************* RECTANGLE *********************************/
 
