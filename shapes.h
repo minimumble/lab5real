@@ -61,8 +61,7 @@ private:
 // TASK 1 - CIRCLE DECLARATION HERE
 class Circle : public Ellipse {
 public:
-    Circle(double rad_in)
-    : Ellipse(rad_in, rad_in) {};
+    Circle(double rad_in);
 };
 /********************************* RECTANGLE *********************************/
 
