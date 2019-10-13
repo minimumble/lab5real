@@ -59,10 +59,27 @@ private:
 /********************************** CIRCLE ***********************************/
 
 // TASK 1 - CIRCLE DECLARATION HERE
+class Circle : public Shape {
+public:
+	Circle(double x_rad_in, double y_rad_in);
+	virtual double area() const override;
 
+	virtual void draw(Canvas *canvas) const override;
+private:
+	double x_rad, y_rad;
+};
 /********************************* RECTANGLE *********************************/
 
-// TASK 2 - RECTANGLE DECLARATION HERE
+class Rectangle : public shape {
+public:
+	Rectangle(double x_va_in, y_val_in);
+	virtual double area() const override;
+
+	virtual void draw(Canvas *canvas) const override;
+
+private:
+	double x_val, y_val;
+};
 
 
 #endif /* SHAPES_H */
