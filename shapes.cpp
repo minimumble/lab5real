@@ -50,6 +50,10 @@ Circle::Circle(double rad_in)
 Rectangle::Rectangle(double x_val_in, double y_val_in)
 : width(x_val_in), height(y_val_in) { }
 
+double Rectangle::area() const {
+    return PI * width * height;
+}
+
 void Rectangle::draw(Canvas *canvas) const {
     for (int x = 0; x < Canvas::WIDTH; ++x) {
       for (int y = 0; y < Canvas::HEIGHT; ++y) {
