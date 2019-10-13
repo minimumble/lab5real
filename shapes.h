@@ -58,22 +58,23 @@ private:
 
 /********************************** CIRCLE ***********************************/
 
-// TASK 1 - CIRCLE DECLARATION HERE
 class Circle : public Ellipse {
 public:
     Circle(double rad_in);
 };
+
 /********************************* RECTANGLE *********************************/
 
 class Rectangle : public Shape {
 public:
-	Rectangle(double x_va_in, y_val_in);
+	Rectangle(double x_val_in, double y_val_in);
 	virtual double area() const override;
 
 	virtual void draw(Canvas *canvas) const override;
 
 private:
-	double x_val, y_val;
+    double width;
+    double height;
 };
 
 

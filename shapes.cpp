@@ -47,4 +47,9 @@ Circle::Circle(double rad_in)
 
 /********************************* RECTANGLE *********************************/
 
-// TASK 2 - RECTANGLE IMPLEMENTATION HERE
+Rectangle::Rectangle(double x_val_in, double y_val_in)
+: width(x_val_in), height(y_val_in) { }
+
+void Rectangle::draw(Canvas *canvas) const {
+    
+}
