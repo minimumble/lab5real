@@ -10,16 +10,16 @@ int main() {
   ellip.set_position(20, 20);
 
   // Shape 2
-  // Circle circ(3);
-  // circ.set_position(10, 20);
+  Circle circ(3);
+  circ.set_position(10, 20);
 
   // Shape 3
   // Rectangle rect(20, 3);
   // rect.set_position(15, 10);
 
   // TASK 1,2: FIX
-  const int SIZE = 1;
-  Ellipse* shapes[SIZE] = { &ellip };
+  const int SIZE = 2;
+  Ellipse* shapes[SIZE] = { &ellip , &circ };
 
   Canvas canvas;
   for (int i = 0; i < SIZE; ++i) {
