@@ -14,12 +14,12 @@ int main() {
   circ.set_position(10, 20);
 
   // Shape 3
-  // Rectangle rect(20, 3);
-  // rect.set_position(15, 10);
+  Rectangle rect(20, 3);
+  rect.set_position(15, 10);
 
   // TASK 1,2: FIX
-  const int SIZE = 2;
-  Ellipse* shapes[SIZE] = { &ellip , &circ };
+  const int SIZE = 3;
+  Shape* shapes[SIZE] = { &ellip , &circ , &rect };
 
   Canvas canvas;
   for (int i = 0; i < SIZE; ++i) {
